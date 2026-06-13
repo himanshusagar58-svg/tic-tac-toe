@@ -1,9 +1,23 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-color: #c4e2f5;
+}
 #grid{
         width: 400px;
         height: 400px;
         display: flex;
         flex-direction: row;
-        border: 1px solid black;
+        border: 1px solid  #2c5ead;
+        margin: 25px;
+        color: #e2e4e7;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 25px;
+        
      }
 #row_1{
         display: flex;
@@ -24,11 +38,35 @@
         
 }
 .cell{
-        border: 1px solid black;
+        border: 1px solid  #2c5ead;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         flex: 1;
         font-size: 20px;
+        background-color: aliceblue;
+        transition: 0.2s ease;
+    }
+    .cell:hover{
+        background-color: bisque;
+    }
+    .Inst{
+        display: flex;
+        flex-direction: column;
+        color: #2c5ead;
+        font-family: cursive;
+        font-weight: bold;
+        flex: 1;
+    }
+    .winner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #15b758;
+        font-family: cursive;
+        font-weight: bolder;
+        flex: 1;
+        font-size: 30px;
     }
